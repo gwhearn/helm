@@ -1,0 +1,25 @@
+# Sample workflow for building and deploying a Jekyll site to GitHub Pages
+name: Deploy Jekyll with GitHub Pages dependencies preinstalled
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+- name: Helm Chart Releaser
+  # You may pin to the exact commit or the version.
+  # uses: helm/chart-releaser-action@98bccfd32b0f76149d188912ac8e45ddd3f8695f
+  uses: helm/chart-releaser-action@v1.4.1
+  with:
+    # The chart-releaser version to use (default: v1.4.1)
+    version: # optional, default is v1.4.1
+    # The relative path to the chart-releaser config file
+    config: # optional
+    # The charts directory
+    charts_dir: #optional, default is charts
+    # The GitHub Pages URL to the charts repo (default: https://gwhearn.github.io/helm<repo>)
+    charts_repo_url: https://gwhearn.github.io/helm
+    # Where to install the cr tool
+    install_dir: # optional
+    # Just install cr tool
+    install_only: # optional
