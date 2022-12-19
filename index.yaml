@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  GBH-airflow:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-12-19T15:59:00.0619366Z"
+    description: A Helm chart for Kubernetes
+    digest: be64417baad7c87c64e4ca31ca890fb385d942b605e744a014e35340b66769be
+    name: GBH-airflow
+    type: application
+    urls:
+    - https://gwhearn.github.io/helm/GBH-airflow-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-12-19T15:59:00.0608415Z"
